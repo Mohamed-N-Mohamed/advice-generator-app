@@ -1,13 +1,6 @@
-import { data } from 'autoprefixer'
-import React, { useState, useEffect} from 'react'
-
-//images
-import iconDice from '../assets/images/icon-dice.svg'
-import patternDividerDesktop from '../assets/images/pattern-divider-desktop.svg'
-import patternDividerMobile from '../assets/images/pattern-divider-mobile.svg'
+import { useState, useEffect} from 'react'
 
 export default function Home() {
-
   useEffect(() => {
     fetchRandomAdvice()
   }, [])
@@ -46,31 +39,20 @@ export default function Home() {
     <div className="relative flex py-3 items-center">
       <div className="flex-grow border-t border-gray-400"></div>
       <span className="flex-shrink mx-4 text-gray-400">
-        {/* <img src={patternDividerMobile} alt="" /> */}
       </span>
       <div className="flex-grow border-t border-gray-400"></div>
   </div>
 
   <div className="generate new quote w-1/2 mx-auto md:w-80">
-          {/* <div className="w-2/4 rounded-full bg-red-200 h-4">
-          <img src={iconDice} alt="" />
-          </div> */}
-
           {adviceError && (
             <div className="error">
               <h2>{adviceError}</h2>
             </div>
           )}
-
           <button className='p-2 bg-Neon-Green rounded-lg text-sm md:w-full md:p-3' onClick={fetchRandomAdvice}>Generate new quote</button>
 
         </div>
-
         </div>
-
-
-     
-
     </div>
 
    
