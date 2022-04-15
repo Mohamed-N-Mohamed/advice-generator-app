@@ -17,7 +17,10 @@ module.exports = {
       },
       colors: {
        'Grayish-Blue': 'hsl(217, 19%, 38%)',
-       'Dark-Grayish-Blue': 'hsl(217, 19%, 24%)'
+       'Dark-Grayish-Blue': 'hsl(217, 19%, 24%)',
+       'Light-Cyan': 'hsl(193, 38%, 86%)',
+       'Neon-Green': ' hsl(150, 100%, 66%)'
+
       }
     },
   },
